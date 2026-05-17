@@ -4,16 +4,21 @@
 The `resource_group_storage` module is located in `modules/resource_group_storage` folder.
 
 ## Module Overview
-This module creates a simple Azure resource group.
+This module creates a simple Azure resource group and storage account in it.
 
 ## Input Variables
 
-### `name`
+### `resource_group_name`
 - **Type**: `string`
 - **Description**: Name for the resource group and storage account
 - **Required**: `true`
 
 ### `location`
+- **Type**: `string`
+- **Description**: Azure region where resources will be created
+- **Required**: `true`
+
+### `storage_account_name`
 - **Type**: `string`
 - **Description**: Azure region where resources will be created
 - **Required**: `true`
