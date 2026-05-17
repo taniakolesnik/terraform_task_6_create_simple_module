@@ -1,7 +1,7 @@
 output "resource_group_id" {
-  value = azurerm_resource_group.rg.id
+  value = module.resource_group_storage.resource_group_id
 }
 
 output "storage_account_id" {
-  value = azurerm_storage_account.acc.id
+  value = module.resource_group_storage.storage_account_id
 }
